@@ -15,7 +15,7 @@ body {
 /* Navbar */
 .navbar {
     background-color: #2d1e2f;
-    padding: 18px 50px;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,17 +23,15 @@ body {
 
 .logo {
     color: #ffb6c1;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
-    letter-spacing: 1px;
 }
 
 .nav-links a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
-    margin-left: 25px;
-    font-weight: 500;
-    transition: 0.3s ease;
+    margin-left: 15px;
+    font-size: 14px;
 }
 
 .nav-links a:hover {
@@ -43,48 +41,33 @@ body {
 /* Header */
 header {
     text-align: center;
-    padding: 50px 20px;
+    padding: 30px 15px;
     background: linear-gradient(to right, #ffb6c1, #ffd1dc);
-    color: #2d1e2f;
 }
 
-/* Profile Image */
+/* FIXED PROFILE IMAGE */
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;   /* Prevent stretching */
     border-radius: 50%;
-    border: 6px solid white;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border: 5px solid white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     margin-bottom: 15px;
 }
 
-/* Card Sections */
+/* Sections */
 .card {
     background: white;
-    width: 75%;
-    margin: 40px auto;
-    padding: 35px;
-    border-radius: 20px;
-    border-left: 8px solid #ffb6c1;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
+    width: 90%;
+    margin: 25px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 h2 {
-    margin-bottom: 15px;
-    color: #2d1e2f;
-}
-
-ul {
-    list-style: none;
-}
-
-ul li {
-    padding: 8px 0;
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -92,29 +75,6 @@ footer {
     background-color: #2d1e2f;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 14px;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-links a {
-        margin: 10px 0;
-    }
-
-    .card {
-        width: 90%;
-    }
+    padding: 15px;
+    font-size: 13px;
 }
